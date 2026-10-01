@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NIXO — Time Made Personal</title>
+  <meta
+    name="description"
+    content="NIXO — Modern watches for every moment. Delivery across Morocco."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    Free delivery across Morocco 🇲🇦
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">NIXO</a>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <span>⌕</span>
+      </button>
+
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <span>Bag</span>
+        <small id="cartCount">0</small>
+      </button>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">×</button>
+
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#men">Men</a>
+    <a href="#women">Women</a>
+    <a href="#about">About</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">NIXO / WATCH COLLECTION</p>
+
+        <h1>
+          TIMELESS.
+          <span>MADE FOR YOU.</span>
+        </h1>
+
+        <p class="hero-text">
+          Discover modern watches designed to match
+          your style, your moments and your time.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">
+            Shop Collection
+          </a>
+
+          <a href="#about" class="btn btn-outline">
+            Discover NIXO
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-circle"></div>
+
+        <div class="hero-watch">
+          <div class="watch-face">
+            <div class="watch-center"></div>
+            <div class="watch-hand hand-hour"></div>
+            <div class="watch-hand hand-minute"></div>
+          </div>
+
+          <div class="watch-strap"></div>
+        </div>
+
+        <div class="hero-label">
+          <span>01</span>
+          NIXO CLASSIC
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+
+      <div class="trust-item">
+        <strong>01</strong>
+        <div>
+          <h4>Free Delivery</h4>
+          <p>Across Morocco</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <strong>02</strong>
+        <div>
+          <h4>Easy Ordering</h4>
+          <p>Simple & fast</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <strong>03</strong>
+        <div>
+          <h4>Customer Support</h4>
+          <p>We're here for you</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <strong>04</strong>
+        <div>
+          <h4>Morocco</h4>
+          <p>Made for your style</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section" id="shop">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Featured Watches</h2>
+        </div>
+
+        <a href="#shop" class="view-all">
+          View all →
+        </a>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1 -->
+        <article
+          class="product-card"
+          data-name="NIXO Classic Black"
+          data-price="299"
+          data-category="Men"
+        >
+          <div class="product-image dark-watch">
+            <span class="product-tag">NEW</span>
+
+            <div class="watch-display black-display">
+              <div class="display-face">
+                <span>10</span>
+                <small>20</small>
+              </div>
+            </div>
+
+            <button class="quick-view">
+              Quick View
+            </button>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <p class="product-category">MEN / CLASSIC</p>
+              <h3>NIXO Classic Black</h3>
+            </div>
+
+            <strong>299 MAD</strong>
+          </div>
+
+          <button
+            class="add-cart"
+            data-product="NIXO Classic Black"
+            data-price="299"
+          >
+            Add to Bag
+          </button>
+        </article>
+
+        <!-- Product 2 -->
+        <article
+          class="product-card"
+          data-name="NIXO Silver One"
+          data-price="349"
+          data-category="Men"
+        >
+          <div class="product-image silver-watch">
+
+            <div class="watch-display silver-display">
+              <div class="display-face">
+                <span>10</span>
+                <small>20</small>
+              </div>
+            </div>
+
+            <button class="quick-view">
+              Quick View
+            </button>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <p class="product-category">MEN / PREMIUM</p>
+              <h3>NIXO Silver One</h3>
+            </div>
+
+            <strong>349 MAD</strong>
+          </div>
+
+          <button
+            class="add-cart"
+            data-product="NIXO Silver One"
+            data-price="349"
+          >
+            Add to Bag
+          </button>
+        </article>
+
+        <!-- Product 3 -->
+        <article
+          class="product-card"
+          data-name="NIXO Rose"
+          data-price="279"
+          data-category="Women"
+        >
+          <div class="product-image rose-watch">
+            <span class="product-tag">POPULAR</span>
+
+            <div class="watch-display rose-display">
+              <div class="display-face">
+                <span>10</span>
+                <small>20</small>
+              </div>
+            </div>
+
+            <button class="quick-view">
+              Quick View
+            </button>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <p class="product-category">WOMEN / ELEGANCE</p>
+              <h3>NIXO Rose</h3>
+            </div>
+
+            <strong>279 MAD</strong>
+          </div>
+
+          <button
+            class="add-cart"
+            data-product="NIXO Rose"
+            data-price="279"
+          >
+            Add to Bag
+          </button>
+        </article>
+
+        <!-- Product 4 -->
+        <article
+          class="product-card"
+          data-name="NIXO Minimal"
+          data-price="319"
+          data-category="Women"
+        >
+          <div class="product-image minimal-watch">
+
+            <div class="watch-display minimal-display">
+              <div class="display-face">
+                <span>10</span>
+                <small>20</small>
+              </div>
+            </div>
+
+            <button class="quick-view">
+              Quick View
+            </button>
+          </div>
+
+          <div class="product-info">
+            <div>
+              <p class="product-category">WOMEN / MINIMAL</p>
+              <h3>NIXO Minimal</h3>
+            </div>
+
+            <strong>319 MAD</strong>
+          </div>
+
+          <button
+            class="add-cart"
+            data-product="NIXO Minimal"
+            data-price="319"
+          >
+            Add to Bag
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="editorial">
+
+      <div class="editorial-image">
+        <div class="editorial-watch">
+          <div class="editorial-face">
+            NIXO
+          </div>
+        </div>
+      </div>
+
+      <div class="editorial-content">
+        <p class="eyebrow">THE NIXO PHILOSOPHY</p>
+
+        <h2>
+          Your time.
+          <span>Your style.</span>
+        </h2>
+
+        <p>
+          A watch is more than an accessory.
+          It's part of the way you show up,
+          move forward and define your own moment.
+        </p>
+
+        <a href="#about" class="text-link">
+          Discover our story →
+        </a>
+      </div>
+
+    </section>
+
+    <!-- MEN -->
+    <section class="category-section" id="men">
+
+      <div class="category-content">
+        <p class="eyebrow">01 / COLLECTION</p>
+        <h2>Men's Watches</h2>
+
+        <p>
+          Clean lines. Strong presence.
+          Watches made for everyday confidence.
+        </p>
+
+        <a href="#shop" class="btn btn-light">
+          Explore Men
+        </a>
+      </div>
+
+      <div class="category-visual men-visual">
+        <div class="large-watch">
+          <div class="large-watch-face">
+            <span>10</span>
+            <small>20</small>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- WOMEN -->
+    <section class="category-section reverse" id="women">
+
+      <div class="category-content">
+        <p class="eyebrow">02 / COLLECTION</p>
+        <h2>Women's Watches</h2>
+
+        <p>
+          Elegant details and modern design
+          created to complement every moment.
+        </p>
+
+        <a href="#shop" class="btn btn-light">
+          Explore Women
+        </a>
+      </div>
+
+      <div class="category-visual women-visual">
+        <div class="large-watch women-large-watch">
+          <div class="large-watch-face">
+            <span>10</span>
+            <small>20</small>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- WHY NIXO -->
+    <section class="section why-section" id="about">
+
+      <div class="section-heading centered">
+        <div>
+          <p class="eyebrow">WHY NIXO</p>
+          <h2>Made for your everyday.</h2>
+        </div>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature">
+          <span>01</span>
+          <h3>Simple</h3>
+          <p>
+            Modern watches without unnecessary
+            complexity.
+          </p>
+        </div>
+
+        <div class="feature">
+          <span>02</span>
+          <h3>Accessible</h3>
+          <p>
+            Premium-looking designs at accessible
+            prices.
+          </p>
+        </div>
+
+        <div class="feature">
+          <span>03</span>
+          <h3>Morocco</h3>
+          <p>
+            Delivery available across Morocco.
+          </p>
+        </div>
+
+        <div class="feature">
+          <span>04</span>
+          <h3>Personal</h3>
+          <p>
+            Find the watch that feels like you.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="final-cta">
+
+      <p class="eyebrow">YOUR NEXT MOMENT</p>
+
+      <h2>
+        FIND YOUR
+        <span>TIMEPIECE.</span>
+      </h2>
+
+      <a href="#shop" class="btn btn-primary">
+        Shop NIXO
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <div class="footer-logo">NIXO</div>
+
+        <p>
+          Modern watches for every moment.
+        </p>
+
+        <span>
+          Morocco 🇲🇦
+        </span>
+      </div>
+
+      <div class="footer-column">
+        <h4>Shop</h4>
+        <a href="#shop">All Watches</a>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Help</h4>
+        <a href="#">Delivery</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 NIXO. All rights reserved.</span>
+
+      <span class="nexora-credit">
+        Designed & built by NEXORA
+      </span>
+    </div>
+
+  </footer>
+
+  <!-- SEARCH MODAL -->
+  <div class="modal-overlay" id="searchModal">
+
+    <div class="search-modal">
+
+      <button class="modal-close" id="searchClose">
+        ×
+      </button>
+
+      <p class="eyebrow">SEARCH NIXO</p>
+
+      <h2>Find your watch.</h2>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search watches..."
+      />
+
+      <div id="searchResults"></div>
+
+    </div>
+
+  </div>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay">
+
+    <aside class="cart-drawer">
+
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">YOUR BAG</p>
+          <h2>Shopping Bag</h2>
+        </div>
+
+        <button id="cartClose">
+          ×
+        </button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+          <p>Your bag is empty.</p>
+          <a href="#shop" id="emptyCartShop">
+            Explore watches →
+          </a>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">0 MAD</strong>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+          Order Now
+        </button>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal-overlay" id="productModal">
+
+    <div class="product-modal">
+
+      <button class="modal-close" id="productClose">
+        ×
+      </button>
+
+      <div class="product-modal-visual">
+        <div class="modal-watch">
+          <div class="modal-watch-face">
+            <span>10</span>
+            <small>20</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-modal-content">
+
+        <p class="eyebrow" id="modalCategory">
+          NIXO / WATCH
+        </p>
+
+        <h2 id="modalName">
+          NIXO Classic Black
+        </h2>
+
+        <strong id="modalPrice">
+          299 MAD
+        </strong>
+
+        <p>
+          A modern everyday timepiece designed
+          to combine clean aesthetics with
+          effortless style.
+        </p>
+
+        <div class="modal-details">
+          <span>✓ Delivery across Morocco</span>
+          <span>✓ Easy ordering</span>
+          <span>✓ Customer support</span>
+        </div>
+
+        <button
+          class="btn btn-primary modal-add"
+          id="modalAdd"
+        >
+          Add to Bag
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
